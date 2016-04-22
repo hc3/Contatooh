@@ -1,0 +1,23 @@
+{
+  "name": "contatooh",
+  "description": "sistema feito para estudo",
+  "main": "app.js",
+  "authors": [
+    "hc3"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mean",
+    "javascript",
+    "node",
+    "angular"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
