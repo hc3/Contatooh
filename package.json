@@ -1,0 +1,17 @@
+{
+  "name": "contatooh",
+  "version": "0.0.1",
+  "description": "sistema feito para estudo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "javascript",
+    "node",
+    "angular"
+  ],
+  "author": "hc3",
+  "license": "ISC"
+}
