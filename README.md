@@ -7,37 +7,37 @@ baseadas no livro mean-full-stack-javascript-para-aplicacoes-web-com-mongodb-exp
 
 <ul>
   <li>
-    <h3>1-Introdução</h3>
+    <h4>1-Introdução</h4>
   </li>
   <li>
-    <h3>2-Express: framework web para Node.js</h3>
+    <h4>2-Express: framework web para Node.js</h4>
   </li>
   <li>
-    <h3>3-Bower: gerenciador de dependências front-end</h3>
+    <h4>3-Bower: gerenciador de dependências front-end</h4>
   </li>
   <li>
-    <h3>4-AngularJS: o framework MVC da Google</h3>
+    <h4>4-AngularJS: o framework MVC da Google</h4>
   </li>
   <li>
-    <h3>5-Integrando AngularJS e Express</h3>
+    <h4>5-Integrando AngularJS e Express</h4>
   </li>
   <li>
-    <h3>6-MongoDB: banco de dados baseado em documento</h3>
+    <h4>6-MongoDB: banco de dados baseado em documento</h4>
   </li>
   <li>
-    <h3>7-Integrando Express e MongoDB</h3>
+    <h4>7-Integrando Express e MongoDB</h4>
   </li>
   <li>
-    <h3>8-Autenticação com Passport</h3>
+    <h4>8-Autenticação com Passport</h4>
   </li>
   <li>
-    <h3>9-Tornando sua aplicação ainda mais segura</h3>
+    <h4>9-Tornando sua aplicação ainda mais segura</h4>
   </li>
   <li>
-    <h3>10-Grunt: automação de tarefas front-end</h3>
+    <h4>10-Grunt: automação de tarefas front-end</h4>
   </li>
   <li>
-    <h3>11-Testando a aplicação</h3>
+    <h4>11-Testando a aplicação</h4>
   </li>  
 </ul>
 
