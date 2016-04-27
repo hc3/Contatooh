@@ -22,10 +22,10 @@ baseadas no livro mean-full-stack-javascript-para-aplicacoes-web-com-mongodb-exp
     ng-app que gerencia um bloco de código sendo que se for colocada na tag html vai gerenciar toda a página, foi criado um 
     modulo principal da aplicação com a variável global angular usando a notação <code>angular.module('nomeModule',[]); </code>
     , também aprendemos sobre Angular expression AE que é caracterizada por {{ }} e tudo que estiver dentro sera controlado pelo Angular
-    um exemplo pode ser ``` <p> nome : {{nome}} </p> ``` para que nome seja inicializado com um valor dinâmico ele precisa estar no scopo do angular
-    e esse scopo vai estar associado ao um controller usando a diretiva ``` ng-controller="nomeController" ``` para que seja definido um controller 
-    vamos usar a seguinte notação ``` angular.module('nomeModule').controller('nomecontroller',function($scope) {} ```` esse scope é justamente quem
-    vai gerenciar as vairáveis explicadas acima como ````{{nome}}```` no scope sera ```` $scope.nome = "fulano" ```` aprendemos tb injeção de dependência
+    um exemplo pode ser <code> nome : {{nome}} </code>  para que nome seja inicializado com um valor dinâmico ele precisa estar no scopo do angular
+    e esse scopo vai estar associado ao um controller usando a diretiva <code> ng-controller="nomeController" </code> para que seja definido um controller 
+    vamos usar a seguinte notação <code> angular.module('nomeModule').controller('nomecontroller',function($scope) {} </code> esse scope é justamente quem
+    vai gerenciar as vairáveis explicadas acima como <code>{{nome}}</code> no scope sera <code> $scope.nome = "fulano" </code> aprendemos tb injeção de dependência
     que é o caso do ojbeto $scope na injeção de dependência do angular temos que usar o nome correto do objeto a ser injetado para que funcione , 
     aprendemos também diretivas como ng-click , ng-repeat e vamos aprender muitas outras.</p>
   </li>
