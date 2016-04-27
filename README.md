@@ -20,7 +20,7 @@ baseadas no livro mean-full-stack-javascript-para-aplicacoes-web-com-mongodb-exp
     <h4>4-AngularJS: o framework MVC da Google</h4>
     <p>um capitulo introdutório do Angular , foi abordado como ativar uma pagina para usar o Angular com a diretiva 
     ng-app que gerencia um bloco de código sendo que se for colocada na tag html vai gerenciar toda a página, foi criado um 
-    modulo principal da aplicação com a variável global angular usando a notação ``` angular.module('nomeModule',[]); ````
+    modulo principal da aplicação com a variável global angular usando a notação <code>angular.module('nomeModule',[]); </code>
     , também aprendemos sobre Angular expression AE que é caracterizada por {{ }} e tudo que estiver dentro sera controlado pelo Angular
     um exemplo pode ser ``` <p> nome : {{nome}} </p> ``` para que nome seja inicializado com um valor dinâmico ele precisa estar no scopo do angular
     e esse scopo vai estar associado ao um controller usando a diretiva ``` ng-controller="nomeController" ``` para que seja definido um controller 
