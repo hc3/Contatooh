@@ -1,27 +1,29 @@
-angular.module('contatooh').controller('ContatosController',function($scope,$routeParams) {
-  
-  $scope.contatos = [{
-    "_id":1,
-    "nome":"Contato 1",
-    "email":"contato1@gmail.com"
-  },{
-    "_id":2,
-    "nome":"Contato 2",
-    "email":"contato1@gmail.com"
-  },{
-    "_id":3,
-    "nome":"Contato 3",
-    "email":"contato1@gmail.com"    
-  },{
-    "_id":4,
-    "nome":"Contato 4",
-    "email":"contato1@gmail.com"    
-  },{
-    "_id":5,
-    "nome":"Contato 5",
-    "email":"contato1@gmail.com"    
-  }];
-  
-  $scope.filtro = '';
+angular.module('contatooh').controller('ContatosController',
+  function($scope,$resource) {
+ 
+    var Contato = $resource('/contatos/:id');
 
+    function buscaContatos() {
+      Contato.query(
+        function(contatos){
+          $scope.contatos = contatos;
+        },
+        function(erro) {
+          console.log('deu merda ao buscar contato');
+          console.log(erro);
+        });      
+    }
+    
+    $scope.remove = function(contato) {
+      Contato.delete({id:contato._id},
+        buscaContatos(),
+        function(erro){
+          console.log('deu merda ao remover contato');
+          console.log(erro);
+        });
+    };
+    
+    buscaContatos();
+    $scope.filtro = '';
+  
 });
