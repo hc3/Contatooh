@@ -1,16 +1,22 @@
 angular.module('contatooh').controller('ContatosController',
   function($scope,$resource) {
  
-    var Contato = $resource('/contatos/:id');
+    var Contato = $resource('/contatos');
+    
+    $scope.filtro = '';
+    $scope.mensagem = {texto:''};
+    
 
     function buscaContatos() {
       Contato.query(
         function(contatos){
+          console.log(contatos);
           $scope.contatos = contatos;
+          $scope.mensgem = {};
         },
         function(erro) {
-          console.log('deu merda ao buscar contato');
           console.log(erro);
+          $scope.mensagem = {texto:'Não foi possível obter contato'};
         });      
     }
     
@@ -18,12 +24,12 @@ angular.module('contatooh').controller('ContatosController',
       Contato.delete({id:contato._id},
         buscaContatos(),
         function(erro){
-          console.log('deu merda ao remover contato');
           console.log(erro);
+          $scope.mensagem = {texto:'Não foi possível remover contato'};
         });
     };
     
     buscaContatos();
-    $scope.filtro = '';
+    
   
 });
